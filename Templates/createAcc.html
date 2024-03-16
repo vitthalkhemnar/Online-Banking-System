@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registration | FinVista</title>
+<style type="text/css">
+	@charset "UTF-8";
+	@import url('https://fonts.googleapis.com/css2?family=Brygada+1918&family=Cinzel&family=Edu+TAS+Beginner:wght@500&family=Josefin+Slab&family=Kanit&family=Mooli&family=Open+Sans&family=Rajdhani:wght@500&family=Roboto+Slab&family=Sometype+Mono&family=Source+Code+Pro:wght@300&family=Special+Elite&family=Ubuntu:wght@300&display=swap');
+
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	
+	.back {
+		margin-left: 60px;
+	}
+	
+	.back a {
+		font-size: 40px;
+		text-decoration: none;
+		font-weight: bold;
+		color: #001B79;
+	}
+	
+	.back a:hover {
+		color: blue;
+	}
+	
+	.container {
+		margin: 20px 200px;		
+	}
+	
+	.heading {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	
+	.heading h1 {
+		font-family: Roboto Slab;
+		text-transform: uppercase;
+		font-weight: bold;
+		color: #001B79;
+	}
+	
+	.f1 {
+		font-size: 20px;
+		padding-top: 16px;
+		padding-bottom: 30px;
+		font-family: Kanit;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: left;
+	}
+	
+	table tr td {
+		padding: 10px;
+	}
+	
+	.form {
+		margin: 0px 100px;
+	}
+	
+	.f1 input {
+		margin-bottom: 30px;
+		border-radius: 6px;
+		border-color: #7B66FF;
+		height: 30px;
+		font-size: 16px;
+		font-family: Kanit;
+		width: 900px;
+	}
+	
+	.f1 select {
+		height: 30px;
+		margin: 6px 0px;
+		margin-bottom: 30px;
+		border-radius: 6px;
+		border-color: #7B66FF;
+		border-width: 2px;
+		font-family: Kanit;
+		text-align: center;
+		font-size: 14px;
+		width: 300px;
+	}
+	
+	#dob {
+		width: 300px;
+	}
+	
+	#add {
+		font-size: 16px;
+		border: 2px solid #7B66FF;
+		border-radius: 6px;
+		margin-bottom: 30px;
+		width: 900px;
+	}
+	
+	.rad-in {
+		display: flex;
+		flex-direction: row;
+		margin: 30px 0px;
+	}
+	
+	.mar {
+		font-size: 18px;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.m input {
+		width: 16px;
+		height: 16px;
+		margin: 4px;
+	}
+	
+	#gen {
+		margin-right: 200px;
+	}
+	
+	.head {
+		font-size: 20px;
+	}
+	
+	.content {
+		margin-left: 40px;
+		font-size: 18px;
+	}
+	
+	.btn {
+		display: flex;
+		justify-content: center;
+	}
+	
+	button {
+		font-size: 16px;
+		font-family: Kanit;
+		font-weight: bold;
+		text-transform: uppercase;	
+		width: 220px;
+		padding: 6px 20px;
+		border-radius: 8px;
+		cursor: pointer;
+		background-color: white;
+		color: #7B66FF;
+		border: 1px solid #7B66FF;
+		margin: 12px;
+		margin-top: 30px;
+	}
+	
+	button:hover {
+		background-color: #7B66FF;
+		color: white;
+		border: 1px solid #7B66FF;
+		box-shadow: 3px 3px 6px black;
+	}
+</style>
+</head>
+<body>
+	<div class="back">
+		<a href="index.html">&laquo;</a>
+	</div>
+	<div class="container">
+		<div class="heading">
+			<h1>Create New Account</h1>
+		</div>
+		<div class="form">
+			<form class=f1 action="createAccount">
+				<label for="fname">First Name</label>
+				<input type="text" name="fname" required>
+				
+				<label for="lname">Last Name</label>
+				<input type="text" name="lname" required>
+				
+				<label for="phone">Phone No.</label>		
+				<input type="tel" name="phone" required>
+				
+				<label for="address">Address</label>
+				<textarea id="add" rows="5" cols="38" name="address" required></textarea>
+			
+				<label for="email">Email</label>	
+				<input type="email" name="email" required>
+				
+				<label for="dob">Date of Birth</label>
+				<input id="dob" type="date" style="text-align: center; font-family: Kanit;" name="dob" required>
+				
+				
+				<div class="rad-in">
+					<div class="mar" id="gen">
+						<div class="head">
+							<label for="gender">Gender<b>:</b></label>
+						</div>
+						<div class="content">
+							<div class="m">
+								<input type="radio" name="gender" value="Male" required>
+								<label>Male</label>
+							</div>
+							<div class="m">
+								<input type="radio" name="gender" value="Female" required>
+								<label>Female</label>
+							</div>
+						</div>
+					</div>
+				
+					<div class="mar mars" id="mari">
+						<div class="head">
+							<label for="mar-status">Marital Status<b>:</b></label>
+						</div>
+						<div class="content">
+							<div class="m">								
+								<input type="radio" name="mar-status" value="Married" required>
+								<label for="mar-status">Married</label>
+							</div>
+							<div class="m">
+								<input type="radio" name="mar-status" value="Unmarried" required>
+								<label for="mar-status">Unmarried</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<label for="branch">Branch</label>
+				<select name="branch" required>
+					<option value="#">----- Select Branch -----</option>
+					<option value="Kharadi">Kharadi</option>
+					<option value="Vimannagar">Vimannagar</option>
+					<option value="Wagholi">Wagholi</option>
+					<option value="Yerwada">Yerwada</option>
+				</select>
+				
+				<label for="uname">Create Username</label>
+				<input type="text" name="uname" required>
+				
+				<label for="pass">Create Password</label>
+				<input type="password" name="pass" required>
+				
+				<div class="btn">
+					<button>Create Account</button>
+					<button type="reset">Reset</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
